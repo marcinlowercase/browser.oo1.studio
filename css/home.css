@@ -68,7 +68,7 @@
     display: none;
 }
 
-@media (orientation: portrait) {
+/*@media (orientation: portrait) {
     .screen-border-mask {
         display: block;
         position: absolute;
@@ -79,7 +79,7 @@
         height: calc(var(--layer-height) + 4px);
         border-radius: var(--layer-corner-radius);
     }
-}
+}*/
 
 /* brand column layout */
 #brand {
