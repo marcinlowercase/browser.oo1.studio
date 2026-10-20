@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Account & Data Deletion — oo1 studio</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Instrument+Serif:ital,wght@0,400;1,400&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="icon"
+            href="./assets/images/logo_square.svg"
+            type="image/svg+xml"
+        />
+
+        <link rel="stylesheet" href="https://assets.oo1.studio/outsync.css" />
+        <link rel="stylesheet" href="./css/global.css" />
+        <link rel="stylesheet" href="./css/privacy-policy.css" />
+    </head>
+    <body>
+        <div class="content-container">
+            <div class="content-body">
+                <h1 class="page-title">Account & Data Deletion</h1>
+
+                <p class="effective-date">
+                    Instructions for permanently deleting your cloud sync data
+                    and revoking access for
+                    <a href="./index.html" class="text-link"><strong>the browser of oo1 studio</strong></a>
+                    by <strong>oo1 studio</strong>.
+                </p>
+
+                <p>
+                    <strong>the browser of oo1 studio</strong> operates on a serverless,
+                    local-first Bring-Your-Own-Storage (BYOS) architecture. <strong>oo1 studio does not
+                    host or operate centralized database servers</strong>; all cloud backups reside
+                    exclusively inside your personal Google Drive account. You have full self-serve
+                    control to permanently purge your data at any time.
+                </p>
+
+                <h2 class="section-title">1. In-App Deletion (Recommended)</h2>
+                <p>
+                    If you currently have the app installed, you can permanently erase your
+                    entire cloud backup directly through the browser:
+                </p>
+                <ul class="policy-list">
+                    <li>
+                        Open <strong>the browser of oo1 studio</strong> on your device.
+                    </li>
+                    <li>
+                        Open the browser settings. If not already signed in, tap
+                        <strong>"Sign in with Google"</strong> to authenticate your session.
+                    </li>
+                    <li>
+                        Once authenticated, the button displays as the <strong>"Sync"</strong> button.
+                        Tap it to open the <strong>Sync Panel</strong>.
+                    </li>
+                    <li>
+                        Tap the <strong>"Delete Account"</strong> button and confirm the dialog.
+                    </li>
+                </ul>
+                <p class="policy-note">
+                    Upon confirmation, the app immediately communicates with the Google Drive API to
+                    permanently delete all synced backup files and folders from your Google Drive,
+                    and then automatically signs you out.
+                </p>
+
+                <h2 class="section-title">2. Deletion Without the App (If Uninstalled)</h2>
+                <p>
+                    If you have already uninstalled the application and wish to permanently revoke access
+                    and delete your stored data without reinstalling, follow these self-guided steps:
+                </p>
+                <ul class="policy-list">
+                    <li>
+                        <strong>Revoke Access:</strong> Open your Google Account third-party connections at
+                        <a href="https://myaccount.google.com/connections" target="_blank" class="text-link"><strong>myaccount.google.com/connections</strong></a>.
+                    </li>
+                    <li>
+                        Locate and select <strong>"the browser of oo1 studio"</strong> from your list of connected apps.
+                    </li>
+                    <li>
+                        Click <strong>"Delete all connections"</strong> (or "Revoke Access") to instantly sever the browser's access to your Google account.
+                    </li>
+                    <li>
+                        <strong>Remove Stored Files:</strong> Open
+                        <a href="https://drive.google.com" target="_blank" class="text-link"><strong>Google Drive</strong></a>,
+                        locate the browser application folder (or search for backup payloads), and delete it. Then empty your Google Drive Trash.
+                    </li>
+                </ul>
+
+                <h2 class="section-title">3. What Data Gets Deleted?</h2>
+                <p>
+                    Completing either deletion process permanently erases the following data:
+                </p>
+                <ul class="policy-list">
+                    <li>All synchronized browser profiles and profile names.</li>
+                    <li>All synced pinned web applications, local app HTML code, and custom icons.</li>
+                    <li>All synced browsing history and visited URL records.</li>
+                    <li>All synced browser preferences (such as corner radius, padding, and search engine settings).</li>
+                </ul>
+                <p>
+                    <strong>Data Retention:</strong> Deletion is immediate and permanent. Because oo1 studio
+                    does not operate central servers, no copies or residual backups are retained anywhere on our systems.
+                </p>
+
+                <h2 class="section-title">4. Removing Local Device Data</h2>
+                <p>
+                    Cloud deletion does not affect data stored locally in your device's internal application storage.
+                    To erase all local cookies, cache, tabs, and on-device history:
+                </p>
+                <ul class="policy-list">
+                    <li>Use the built-in "Clear Site Data" or "Close All Tabs" options inside the browser settings, or</li>
+                    <li>Go to Android <strong>Settings &rarr; Apps &rarr; the browser of oo1 studio &rarr; Storage &rarr; "Clear Data"</strong>, or</li>
+                    <li>Uninstall the application directly from your Android device.</li>
+                </ul>
+
+                <h2 class="section-title">5. Support Contact</h2>
+                <p>
+                    If you encounter any issues or have questions regarding deleting your data, please contact our support team at:
+                </p>
+                <p>
+                    <strong>Email:</strong>
+                    <a href="mailto:marcinlowercase@oo1.studio" class="text-link">marcinlowercase@oo1.studio</a>
+                </p>
+
+                <div class="policy-footer">
+                    &copy; <span id="currentYear"></span> oo1 studio. All rights reserved.
+                </div>
+            </div>
+        </div>
+
+        <script>
+            document.getElementById("currentYear").textContent =
+                new Date().getFullYear();
+        </script>
+    </body>
+</html>

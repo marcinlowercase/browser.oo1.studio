@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Privacy Policy — oo1 studio</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Instrument+Serif:ital,wght@0,400;1,400&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="icon"
+            href="./assets/images/logo_square.svg"
+            type="image/svg+xml"
+        />
+
+        <link rel="stylesheet" href="https://assets.oo1.studio/outsync.css" />
+        <link rel="stylesheet" href="./css/global.css" />
+        <link rel="stylesheet" href="./css/privacy-policy.css" />
+    </head>
+    <body>
+        <div class="content-container">
+            <div class="content-body">
+                <h1 class="page-title">Privacy Policy</h1>
+
+                <p class="effective-date">
+                    <strong>Effective Date:</strong> October 19, 2026
+                </p>
+
+                <p>
+                    <a href="https://oo1.studio/" class="text-link"><strong>oo1 studio</strong></a>
+                    built
+                    <a href="./index.html" class="text-link"><strong>the browser of oo1 studio</strong></a>
+                    app as a Free app. We are committed to protecting your
+                    privacy through a local-first, serverless architecture.
+                    This policy explains how our browser operates locally on your
+                    device, how our native hardware bridge functions, and how our
+                    Bring-Your-Own-Storage (BYOS) cloud synchronization works.
+                </p>
+
+                <h2 class="section-title">1. Local-First Operation & Google Drive BYOS Cloud Sync</h2>
+                <p>
+                    By default, the browser operates entirely locally on your device.
+                    We do not use third-party analytics or behavioral tracking SDKs
+                    (such as Google Analytics or Firebase Analytics) to monitor your activity.
+                </p>
+                <p>
+                    <strong>Zero-Server Architecture:</strong> oo1 studio does not host,
+                    own, or operate centralized cloud database servers. We never collect,
+                    store, or view your browsing data on our own infrastructure.
+                </p>
+                <p>
+                    <strong>Optional Google Drive (BYOS) Cloud Sync:</strong> We offer an
+                    optional synchronization feature powered by Google Drive under a
+                    Bring-Your-Own-Storage model. If you choose to enable cloud sync:
+                </p>
+                <ul class="policy-list">
+                    <li>
+                        <strong>Google Authentication:</strong> You sign in directly through
+                        Google OAuth 2.0 to grant the browser access to its own private,
+                        app-specific folder on your personal Google Drive.
+                    </li>
+                    <li>
+                        <strong>Direct Client-to-Cloud Transmission:</strong> Your synced profiles,
+                        pinned web apps, browsing history, and appearance settings are transmitted
+                        directly between your Android device and your personal Google Drive account
+                        via official Google Drive APIs.
+                    </li>
+                </ul>
+                <p class="policy-note">
+                    If you do not sign in to Google Drive, no data is ever synchronized or
+                    transmitted off your device.
+                </p>
+
+                <h2 class="section-title">2. Data Security & Self-Serve Deletion</h2>
+                <p>
+                    All synchronization communications are encrypted in transit using
+                    industry-standard TLS/HTTPS protocols. We do not sell, rent, broker,
+                    or monetize any of your data or account information.
+                </p>
+                <p>
+                    <strong>Complete Self-Serve Deletion:</strong> Because all synced data
+                    resides exclusively inside your own personal Google Drive, you have total
+                    ownership and control over it at all times. For detailed instructions on
+                    deleting your data in-app or revoking access outside the app, please visit our
+                    <a href="./delete-account.html" target="_blank" class="text-link">Account Deletion Guide</a>.
+                </p>
+                <ul class="policy-list">
+                    <li>
+                        You can permanently delete all cloud backups at any time directly within
+                        the browser's Sync Panel using the "Delete Cloud Data" option.
+                    </li>
+                    <li>
+                        You can immediately revoke the browser's access to your Google account
+                        at any time through your Google Account Security Settings.
+                    </li>
+                    <li>
+                        Uninstalling the application or clearing its application storage via Android
+                        Settings permanently deletes all on-device data.
+                    </li>
+                </ul>
+
+                <h2 class="section-title">3. OutSync Native Hardware Bridge & Design Tokens</h2>
+                <p>
+                    The browser features the <strong>OutSync</strong> protocol to bridge native
+                    Android capabilities directly to local and web applications:
+                </p>
+                <ul class="policy-list">
+                    <li>
+                        <strong>Design Tokens:</strong> Physical layout metrics&mdash;such as device
+                        corner radii, screen padding, single-line heights, and system highlight
+                        colors&mdash;are shared locally with the rendering engine. These are generic
+                        hardware measurements that cannot be used to personally identify you.
+                    </li>
+                    <li>
+                        <strong>CameraX & ML Kit Barcode Scanning:</strong> Applications utilizing
+                        the OutSync camera bridge display a local camera stream and decode barcodes
+                        via Google ML Kit. All image analysis and barcode detection take place
+                        <strong>100% on-device in volatile memory</strong>. Camera frames are
+                        never recorded, stored on disk, or transmitted over any network.
+                    </li>
+                    <li>
+                        <strong>Flashlight, Haptics & Audio:</strong> Hardware triggers for the
+                        camera torch, tactile vibration patterns, and notification sounds operate
+                        strictly on local hardware registers and do not transmit data.
+                    </li>
+                    <li>
+                        <strong>Local Storage Bridge:</strong> When permitted, web applications can
+                        save files directly to your device storage (such as Downloads) without
+                        communicating with external servers.
+                    </li>
+                </ul>
+
+                <h2 class="section-title">4. GeckoView Engine & Local Storage</h2>
+                <p>
+                    The browser is powered by the <strong>Mozilla GeckoView</strong> rendering
+                    engine. Standard web browsing data (including cookies, cache, site preferences,
+                    and IndexedDB storage) is managed directly by the engine and stored
+                    <strong>locally on your device</strong>. You can clear this data at any
+                    time using the browser's tab and site data management settings.
+                </p>
+
+                <h2 class="section-title">5. Two-Tier Device & Site Permissions</h2>
+                <p>
+                    Our application enforces a strict two-tier permission model. The browser does
+                    not access sensors in the background. When a web application requests access
+                    to the Camera, Microphone, Location, Local Storage, or Google Drive BYOS:
+                </p>
+                <ul class="policy-list">
+                    <li>
+                        <strong>Contextual In-App Prompt:</strong> The browser displays an internal
+                        permission panel asking you to explicitly allow or deny access for that specific domain.
+                    </li>
+                    <li>
+                        <strong>Android OS Prompt:</strong> If site permission is granted, Android's
+                        system permission dialog is requested if not already approved.
+                    </li>
+                </ul>
+                <p>
+                    Your permission decisions are saved locally per-domain on your device, and you
+                    can inspect, modify, or revoke them at any time.
+                </p>
+
+                <h2 class="section-title">6. Third-Party Websites</h2>
+                <p>
+                    As a web browser, the app provides access to the open internet. We are not
+                    responsible for the privacy practices, content, cookies, or data collection
+                    policies of external third-party websites or services you choose to navigate to.
+                </p>
+
+                <h2 class="section-title">7. Children's Privacy</h2>
+                <p>
+                    Our service does not address anyone under the age of 13. Because we operate
+                    without central servers, we do not knowingly collect personally identifiable
+                    information from children. If you have any questions regarding child privacy,
+                    please contact us.
+                </p>
+
+                <h2 class="section-title">8. Contact Us</h2>
+                <p>
+                    If you have any questions, concerns, or inquiries regarding this Privacy Policy
+                    or your data privacy, please contact us at:
+                </p>
+                <p>
+                    <strong>Email:</strong>
+                    <a href="mailto:marcinlowercase@oo1.studio" class="text-link">marcinlowercase@oo1.studio</a>
+                </p>
+
+                <div class="policy-footer">
+                    &copy; <span id="currentYear"></span> oo1 studio. All rights reserved.
+                </div>
+            </div>
+        </div>
+
+        <script>
+            document.getElementById("currentYear").textContent =
+                new Date().getFullYear();
+        </script>
+    </body>
+</html>
