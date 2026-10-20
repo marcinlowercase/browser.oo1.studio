@@ -16,11 +16,11 @@
     margin-left: var(--device-corner-radius);
 }
 
-@media (orientation: portrait) {
+/*@media (orientation: portrait) {
     .line-left {
         bottom: var(--padding);
     }
-}
+}*/
 
 .line-right {
     top: 0;
@@ -46,11 +46,11 @@
     margin-bottom: var(--device-corner-radius);
 }
 
-@media (orientation: portrait) {
+/*@media (orientation: portrait) {
     .line-bottom {
         left: var(--padding);
     }
-}
+}*/
 
 /* screen border and corner mask */
 .screen-border {
